@@ -10,6 +10,15 @@ app = Flask(__name__)
 def hello():
     return render_template('index.html')
 @app.route('/home')
+def home():
+    return render_template('home.html')
+@app.route('/aboutUs')
+def about():
+    return render_template('about.html')
+@app.route('/services')
+def service():
+    return render_template('services.html')
+@app.route('/home')
 def diplay():
     return "coming from home"
 
